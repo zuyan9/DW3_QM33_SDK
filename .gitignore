@@ -1,0 +1,50 @@
+# Large GUI installers (tracked via GitHub Releases instead)
+SDK/Tools/GUI/
+
+# Firmware & SDK build output directories
+BuildOutput/
+Output/
+build/
+_build/
+Drivers/API/Build_Platforms/STM_Nucleo_F429/Debug/
+Drivers/API/Build_Platforms/STM_Nucleo_F429/Release/
+!**/external/lwip/doc/doxygen/output/
+!**/external/lwip/doc/doxygen/output/**
+
+# Compiled object & firmware build artifacts
+*.o
+*.obj
+*.d
+!**/ChangeLog.d/
+!**/ChangeLog.d/**
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.sym
+
+# Keep factory firmware binaries & vendor SDK prebuilt images tracked
+!SDK/Binaries/
+!SDK/Binaries/**
+!SDK/Firmware/DW3_QM33_SDK_1.1.1/SDK_BSP/Nordic/**/*.hex
+!SDK/Firmware/DW3_QM33_SDK_1.1.1/SDK_BSP/Nordic/**/*.bin
+!Drivers/API/Build_Platforms/nRF52840-DK/sdk/**/*.hex
+!Drivers/API/Build_Platforms/nRF52840-DK/sdk/**/*.bin
+
+# IDE & debugger session files
+JLink.log
+.settings/
+
+# Python cache & virtual environments (uwb-qorvo-tools / build scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+dist/
+
+# OS metadata
+.DS_Store
+Thumbs.db
